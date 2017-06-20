@@ -4,4 +4,17 @@ itemSelector: '.grid-item'
 	$grid.on( 'click', '.grid-item', function() {
 	$( this ).toggleClass('grid-item--gigante');
 	  $grid.masonry();
-	});</script></section></div><script src=scripts/main.js></script></body></html>
+	});
+	$('.grid-item').on('mouseenter',function(){
+	$('.grid-item').removeClass('deactiveState')
+	$(this).removeClass('deactiveState')
+	$(this).removeClass('activeState')
+	$('.grid-item').addClass('deactiveState')
+	$(this).addClass('activeState')
+	$grid.masonry();
+	})
+	$('.grid-item').on('mouseleave',function(){
+	$('.grid-item').removeClass('deactiveState')			
+	$(this).removeClass('activeState')
+	$grid.masonry();
+	})</script></section><section class=subscribe><h1>Subsribe us</h1><p>For most of tech we do</p><p>Experience tech blogs from the best expertise to understand the concepts</p><div class=form-group><input class=form-control type=text placeholder="Email Address"><button class="btn btn-danger">Subscribe&nbsp;<i class="fa fa-paper-plane"></i></button></div></section><h1>Hello Projects</h1></div><script src=scripts/main.js></script></body></html>
